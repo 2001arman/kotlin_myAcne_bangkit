@@ -12,6 +12,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+<!--        <style name="Button.SecondaryColor" parent="ThemeOverlay.AppCompat">-->
+<!--            <item name="secondary_color">@color/secondary_color</item>-->
+<!--        </style>-->
     </style>
 
     <style name="Theme.MyAcne.NoActionBar">
