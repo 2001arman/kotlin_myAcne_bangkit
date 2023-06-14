@@ -1,7 +1,7 @@
-package com.bangkit.myacne
+package com.bangkit.myacne.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.myacne.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity(){

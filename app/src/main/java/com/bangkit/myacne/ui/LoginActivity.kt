@@ -1,8 +1,8 @@
-package com.bangkit.myacne
+package com.bangkit.myacne.ui
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.myacne.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
