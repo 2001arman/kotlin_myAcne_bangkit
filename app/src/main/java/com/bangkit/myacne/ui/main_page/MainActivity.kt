@@ -1,4 +1,4 @@
-package com.bangkit.myacne.ui
+package com.bangkit.myacne.ui.main_page
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
