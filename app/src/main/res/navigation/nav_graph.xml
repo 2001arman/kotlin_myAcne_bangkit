@@ -6,7 +6,8 @@
     app:startDestination="@id/menuFragment">
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.bangkit.myacne.ui.MenuFragment"
+        android:name="com.bangkit.myacne.ui.main_page.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu" >
+    </fragment>
 </navigation>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color2"
-    tools:context=".ui.MenuFragment">
+    tools:context=".ui.main_page.MenuFragment">
 
     <TextView
         android:layout_width="0dp"
@@ -48,7 +48,7 @@
         android:id="@+id/btn_diary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="26dp"
+        android:paddingVertical="20dp"
         android:paddingHorizontal="45dp"
         android:layout_marginBottom="62dp"
         android:layout_marginHorizontal="18dp"
