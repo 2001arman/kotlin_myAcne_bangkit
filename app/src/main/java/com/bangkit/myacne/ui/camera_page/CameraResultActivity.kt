@@ -4,10 +4,12 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.myacne.databinding.ActivityCameraResultBinding
+import com.bangkit.myacne.ui.result_prediction_page.ResultActivity
 import com.bangkit.myacne.ui.result_prediction_page.ResultActivity.Companion.LEVEL
 import com.bangkit.myacne.utils.reduceFileImage
 import com.bangkit.myacne.utils.rotateBitmap
@@ -48,6 +50,8 @@ class CameraResultActivity : AppCompatActivity() {
                 finish()
             }
             btnAccept.setOnClickListener {
+                Toast.makeText(this@CameraResultActivity, "Mengirim Foto....", Toast.LENGTH_SHORT).show()
+                binding.progressBar.visibility = View.VISIBLE
                 sendPhoto()
             }
         }
@@ -85,9 +89,10 @@ class CameraResultActivity : AppCompatActivity() {
         viewModel.sendPhoto(getFile!!).observe(this) {
             if (it != null) {
                 Toast.makeText(this, "Foto Berhasil Dikirim", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, CameraResultActivity::class.java)
+                val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra(LEVEL, it.prediction)
                 startActivity(intent)
+                binding.progressBar.visibility = View.GONE
             }
         }
     }
