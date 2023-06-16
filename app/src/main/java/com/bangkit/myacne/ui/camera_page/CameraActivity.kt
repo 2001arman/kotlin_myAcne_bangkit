@@ -47,11 +47,11 @@ class CameraActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
-            btnHome.setOnClickListener {
-                val intent = Intent(this@CameraActivity, MainActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
+//            btnHome.setOnClickListener {
+//                val intent = Intent(this@CameraActivity, MainActivity::class.java)
+//                startActivity(intent)
+//                finish()
+//            }
         }
     }
 
