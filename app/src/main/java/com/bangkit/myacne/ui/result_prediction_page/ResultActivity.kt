@@ -11,6 +11,9 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val level = intent.getStringExtra(LEVEL)
+        binding.tvAcneLevel.text = level
     }
 
     companion object{
