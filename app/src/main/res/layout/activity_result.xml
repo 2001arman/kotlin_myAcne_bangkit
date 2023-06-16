@@ -34,12 +34,12 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="4dp"
             android:layout_marginHorizontal="28dp"
-            android:text="Level 4"
+            android:text="Level 1"
             android:fontFamily="@font/open_sans_bold"
             android:textColor="@color/primary_color"
             android:textStyle="bold"
             android:textSize="24sp"
-            app:layout_constraintTop_toTopOf=""/>
+            app:layout_constraintTop_toTopOf="parent"/>
     </LinearLayout>
 
     <TextView
@@ -74,7 +74,7 @@
             android:fontFamily="@font/open_sans_bold"
             android:textColor="@color/primary_color"
             android:textSize="16sp"
-            app:layout_constraintTop_toTopOf=""/>
+            app:layout_constraintTop_toTopOf="parent"/>
     </LinearLayout>
 
     <TextView
@@ -111,6 +111,6 @@
             android:fontFamily="@font/open_sans_bold"
             android:textColor="@color/primary_color"
             android:textSize="16sp"
-            app:layout_constraintTop_toTopOf=""/>
+            app:layout_constraintTop_toTopOf="parent"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
