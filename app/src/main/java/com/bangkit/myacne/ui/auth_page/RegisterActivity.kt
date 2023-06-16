@@ -1,6 +1,7 @@
 package com.bangkit.myacne.ui.auth_page
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -51,6 +52,8 @@ class RegisterActivity : AppCompatActivity() {
                         .putString("email", email)
                         .putBoolean("isLogin", false)
                         .apply()
+                    val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+                    startActivity(intent)
                     finish()
                 }
                 tvLogin.setOnClickListener {
